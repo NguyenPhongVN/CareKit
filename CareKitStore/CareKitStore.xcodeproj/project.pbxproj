@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -87,7 +87,6 @@
 		03FE69812345618D00F3318C /* OCKHealthKitTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE69802345618D00F3318C /* OCKHealthKitTask.swift */; };
 		510638E22885B86E00FDC9F5 /* OCKHealthKitPassthroughStore+OutcomesStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510638E12885B86E00FDC9F5 /* OCKHealthKitPassthroughStore+OutcomesStream.swift */; };
 		510638E42885B8ED00FDC9F5 /* OCKHealthKitPassthroughStore+EventsStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510638E32885B8ED00FDC9F5 /* OCKHealthKitPassthroughStore+EventsStream.swift */; };
-		5111EDC6293A4ABA0071A701 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5111EDC5293A4ABA0071A701 /* AsyncAlgorithms */; };
 		5121407D240043E200B035F6 /* TestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5121407C240043E200B035F6 /* TestEvent.swift */; };
 		5122A2B929523218003B0B57 /* CareTaskProgressStrategy+CheckingOutcomesExist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122A2B829523218003B0B57 /* CareTaskProgressStrategy+CheckingOutcomesExist.swift */; };
 		5122A2BB2952323E003B0B57 /* BinaryCareTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122A2BA2952323E003B0B57 /* BinaryCareTaskProgress.swift */; };
@@ -134,6 +133,7 @@
 		51E663272887205C006197D3 /* OCKHealthKitPassthroughStore+FetchEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E663252887205C006197D3 /* OCKHealthKitPassthroughStore+FetchEvents.swift */; };
 		51E663282887205C006197D3 /* OCKHealthKitPassthroughStore+FetchOutcomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E663262887205C006197D3 /* OCKHealthKitPassthroughStore+FetchOutcomes.swift */; };
 		51EB47532901AA2C00734820 /* CareTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EB47522901AA2C00734820 /* CareTaskProgress.swift */; };
+		84FD379A2C76E6D700F8B29C /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 84FD37992C76E6D700F8B29C /* AsyncAlgorithms */; };
 		E7131DC12241FAA80001861B /* OCKTaskQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7131DC02241FAA80001861B /* OCKTaskQuery.swift */; };
 		E7131DC5224200640001861B /* OCKOutcomeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7131DC4224200640001861B /* OCKOutcomeQuery.swift */; };
 		E7131DCB22420A520001861B /* OCKPatientQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7131DCA22420A520001861B /* OCKPatientQuery.swift */; };
@@ -402,7 +402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5111EDC6293A4ABA0071A701 /* AsyncAlgorithms in Frameworks */,
+				84FD379A2C76E6D700F8B29C /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +681,13 @@
 			path = TaskProgress;
 			sourceTree = "<group>";
 		};
+		84FD379B2C76E6E800F8B29C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E746048E22385B5200A1B16B /* Structs */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +715,7 @@
 				E784B8FA2232EED600736CA5 /* CareKitStore */,
 				E784B9052232EED600736CA5 /* CareKitStoreTests */,
 				E784B8F92232EED600736CA5 /* Products */,
+				84FD379B2C76E6E800F8B29C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -897,7 +905,7 @@
 			);
 			name = CareKitStore;
 			packageProductDependencies = (
-				5111EDC5293A4ABA0071A701 /* AsyncAlgorithms */,
+				84FD37992C76E6D700F8B29C /* AsyncAlgorithms */,
 			);
 			productName = CareKitCarePlanStore;
 			productReference = E784B8F82232EED600736CA5 /* CareKitStore.framework */;
@@ -951,7 +959,7 @@
 			);
 			mainGroup = E784B8EE2232EED600736CA5;
 			packageReferences = (
-				5111EDC4293A4ABA0071A701 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				84FD37982C76E6D700F8B29C /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			productRefGroup = E784B8F92232EED600736CA5 /* Products */;
 			projectDirPath = "";
@@ -1519,20 +1527,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5111EDC4293A4ABA0071A701 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+		84FD37982C76E6D700F8B29C /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-async-algorithms";
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.1.0;
+				version = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5111EDC5293A4ABA0071A701 /* AsyncAlgorithms */ = {
+		84FD37992C76E6D700F8B29C /* AsyncAlgorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5111EDC4293A4ABA0071A701 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			package = 84FD37982C76E6D700F8B29C /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
 			productName = AsyncAlgorithms;
 		};
 /* End XCSwiftPackageProductDependency section */

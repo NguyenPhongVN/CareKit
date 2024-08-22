@@ -16,7 +16,6 @@
 		031B456B2474A1380063E717 /* OCKFHIRResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B456A2474A1380063E717 /* OCKFHIRResource.swift */; };
 		031D4B662374E1D900199EFC /* FHIRModels+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D4B652374E1D900199EFC /* FHIRModels+Extensions.swift */; };
 		0364BB6423C421E30047F952 /* CareKitStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364BB6323C421E30047F952 /* CareKitStore.framework */; };
-		0396EF40233D187800C28FC0 /* CareKitFHIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0396EF36233D187800C28FC0 /* CareKitFHIR.framework */; };
 		03AFA92B233E697C0091DD45 /* OCKFHIRCodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA92A233E697C0091DD45 /* OCKFHIRCodingError.swift */; };
 		03AFA930233E69830091DD45 /* OCKDSTU2PatientCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA92D233E69830091DD45 /* OCKDSTU2PatientCoder.swift */; };
 		03AFA931233E69830091DD45 /* OCKR4PatientCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AFA92E233E69830091DD45 /* OCKR4PatientCoder.swift */; };
@@ -28,6 +27,7 @@
 		03E5929123736D0D00B6E9DE /* DSTU2TaskConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5929023736D0D00B6E9DE /* DSTU2TaskConverterTests.swift */; };
 		51373774299E051E000AA8E1 /* ModelsDSTU2 in Frameworks */ = {isa = PBXBuildFile; productRef = 51373773299E051E000AA8E1 /* ModelsDSTU2 */; };
 		51373776299E051E000AA8E1 /* ModelsR4 in Frameworks */ = {isa = PBXBuildFile; productRef = 51373775299E051E000AA8E1 /* ModelsR4 */; };
+		84FD37952C76E42700F8B29C /* CareKitFHIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0396EF36233D187800C28FC0 /* CareKitFHIR.framework */; };
 		E746B33A2378F55600278A95 /* OCKDSTU2ScheduleCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E746B3392378F55600278A95 /* OCKDSTU2ScheduleCoder.swift */; };
 		E746B33E2378F6D500278A95 /* OCKDSTU2MedicationOrderCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E746B33D2378F6D500278A95 /* OCKDSTU2MedicationOrderCoder.swift */; };
 		E746B3422378F95100278A95 /* DSTU2MedicationOrderConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E746B3412378F95100278A95 /* DSTU2MedicationOrderConverterTests.swift */; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0396EF40233D187800C28FC0 /* CareKitFHIR.framework in Frameworks */,
+				84FD37952C76E42700F8B29C /* CareKitFHIR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +589,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -616,7 +615,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -676,7 +674,7 @@
 			repositoryURL = "https://github.com/apple/FHIRModels";
 			requirement = {
 				kind = exactVersion;
-				version = 0.4.0;
+				version = 0.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
